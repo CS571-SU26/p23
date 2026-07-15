@@ -3,5 +3,9 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
     plugins: [react()],
-    base: '/dice-roller/'
+    base: '/dice-roller/',
+    build: {
+    outDir: 'docs',
+    emptyOutDir: true,
+  },
 })
